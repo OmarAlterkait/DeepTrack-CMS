@@ -140,3 +140,13 @@ process = customiseLogErrorHarvesterUsingOutputCommands(process)
 from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEarlyDelete
 process = customiseEarlyDelete(process)
 # End adding early deletion
+
+#Extra lines of code 
+process.load('myAnalyzers.myTrkNtp.myTrkNtp_cfi')
+process.myvtx_step = cms.Path(process.myTrkNtpAnalysisSequence)
+and then adding process.myvtx_step to the end of the main cms.Sequence command.
+You will also need to specify the file where you want to write your root ntuple file such as:
+# Additional output definition
+process.TFileService = cms.Service("TFileService",
+    fileName = cms.string('tracking_ntuple.root')
+)
