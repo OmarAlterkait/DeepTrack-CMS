@@ -1,0 +1,92 @@
+17-Aug-2020 02:56:01 CDT  Initiating request to open file file:step3_inDQM.root
+17-Aug-2020 02:56:01 CDT  Successfully opened file file:step3_inDQM.root
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endLumi  17-Aug-2020 02:56:37 CDT Run: 1 Lumi: 1
+no lumiVsLS ME is available in HLT/LumiMonitoring
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endLumi  17-Aug-2020 02:56:37 CDT Run: 1 Lumi: 1
+no puVsLS ME is available in HLT/LumiMonitoring
+%MSG
+%MSG-w QTestHandle::attachTests:  QualityTester:trackingQTester@endRun  17-Aug-2020 02:56:37 CDT End Run: 1
+ ==>> Invalid qtest xml: Link '*TrackParameters/HitProperties/PixBarrel/NumberOfPixBarrelLayersPerTrackVsPhiProfile_GenTk*', QTest 'CheckVariance:BPixLayersPerTrackVsPhi'  - no matching ME! <<== 
+%MSG
+%MSG-w QTestHandle::attachTests:  QualityTester:trackingQTester@endRun  17-Aug-2020 02:56:37 CDT End Run: 1
+ ==>> Invalid qtest xml: Link '*TrackParameters/HitProperties/PixEndcap/NumberOfPixEndcapLayersPerTrackVsPhiProfile_GenTk*', QTest 'CheckVariance:BPixLayersPerTrackVsPhi'  - no matching ME! <<== 
+%MSG
+%MSG-w QTestHandle::attachTests:  QualityTester:trackingQTester@endRun  17-Aug-2020 02:56:37 CDT End Run: 1
+ ==>> Invalid qtest xml: Link '*TrackParameters/HitProperties/TEC/NumberOfTECLayersPerTrackVsPhiProfile_GenTk*', QTest 'CheckVariance:BPixLayersPerTrackVsPhi'  - no matching ME! <<== 
+%MSG
+%MSG-w QTestHandle::attachTests:  QualityTester:trackingQTester@endRun  17-Aug-2020 02:56:37 CDT End Run: 1
+ ==>> Invalid qtest xml: Link '*TrackParameters/HitProperties/TIB/NumberOfTIBLayersPerTrackVsPhiProfile_GenTk*', QTest 'CheckVariance:BPixLayersPerTrackVsPhi'  - no matching ME! <<== 
+%MSG
+%MSG-w QTestHandle::attachTests:  QualityTester:trackingQTester@endRun  17-Aug-2020 02:56:37 CDT End Run: 1
+ ==>> Invalid qtest xml: Link '*TrackParameters/HitProperties/TID/NumberOfTIDLayersPerTrackVsPhiProfile_GenTk*', QTest 'CheckVariance:BPixLayersPerTrackVsPhi'  - no matching ME! <<== 
+%MSG
+%MSG-w QTestHandle::attachTests:  QualityTester:trackingQTester@endRun  17-Aug-2020 02:56:37 CDT End Run: 1
+ ==>> Invalid qtest xml: Link '*TrackParameters/HitProperties/TOB/NumberOfTOBLayersPerTrackVsPhiProfile_GenTk*', QTest 'CheckVariance:BPixLayersPerTrackVsPhi'  - no matching ME! <<== 
+%MSG
+%MSG-e DQMGenericClient:   DQMGenericClient:postProcessorTrackTrackingOnly@endJob  17-Aug-2020 02:56:37 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/TrackGsf !!!
+%MSG
+%MSG-e DQMGenericClient:   DQMGenericClient:postProcessorTrackTrackingOnly@endJob  17-Aug-2020 02:56:37 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/TrackTPEtaGreater2p7 !!!
+%MSG
+%MSG-e DQMGenericClient:   DQMGenericClient:postProcessorTrackTrackingOnly@endJob  17-Aug-2020 02:56:37 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/PixelTrack !!!
+%MSG
+%MSG-e DQMGenericClient:   DQMGenericClient:postProcessorTrackSummaryTrackingOnly@endJob  17-Aug-2020 02:56:44 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/TrackTPEtaGreater2p7 !!!
+%MSG
+%MSG-e DQMGenericClient:  DQMGenericClient:trackingEffFromHitPattern@endJob  17-Aug-2020 02:56:45 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/TrackParameters/highPurityTracks/pt_1/HIP_OOT_noINpu !!!
+%MSG
+%MSG-e DQMGenericClient:  DQMGenericClient:trackingEffFromHitPattern@endJob  17-Aug-2020 02:56:45 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/TrackParameters/highPurityTracks/pt_1/HIP_noOOT_INpu !!!
+%MSG
+%MSG-e DQMGenericClient:  DQMGenericClient:trackingEffFromHitPattern@endJob  17-Aug-2020 02:56:45 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Tracking/TrackParameters/highPurityTracks/pt_1/noHIP_noOOT_INpu !!!
+%MSG
+%MSG-e DQMGenericClient:  DQMGenericClient:trackingEffFromHitPattern@endJob  17-Aug-2020 02:56:45 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Muons/Tracking/innerTrack !!!
+%MSG
+%MSG-e DQMGenericClient:  DQMGenericClient:trackingEffFromHitPattern@endJob  17-Aug-2020 02:56:45 CDT EndJob
+ DQMGenericClient::findAllSubdirectories ==> Missing folder Muons/globalMuons !!!
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endJob  17-Aug-2020 02:56:45 CDT EndJob
+no lumiVsLS ME is available in HLT/LumiMonitoring
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endJob  17-Aug-2020 02:56:45 CDT EndJob
+no puVsLS ME is available in HLT/LumiMonitoring
+%MSG
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 FastTimerServiceClie -w FastTimerService                       2        2
+    2 FastTimerServiceClie -w FastTimerService                       2        2
+    3 QTestHandle::attachT -w QualityTester:tr                       6        6
+    4 DQMGenericClient     -e DQMGenericClient                       1        1
+    5 DQMGenericClient     -e DQMGenericClient                       3        3
+    6 DQMGenericClient     -e DQMGenericClient                       5        5
+    7 fileAction           -s AfterModBeginStr                       2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 FastTimerServiceClient EndJob           EndJob           
+    2 FastTimerServiceClient Run: 1 Lumi: 1   Run: 1 Lumi: 1   
+    3 QTestHandle::attachTests End Run: 1       End Run: 1       End Run: 1
+    4 DQMGenericClient     EndJob                            
+    5 DQMGenericClient     EndJob           EndJob           EndJob
+    6 DQMGenericClient     EndJob           EndJob           EndJob
+    7 fileAction           BeforeEvents     BeforeEvents     
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                10                  10
+Error                   9                   9
+System                  2                   2
+
+dropped waiting message count 0
+17-Aug-2020 02:56:51 CDT  Closed file file:step3_inDQM.root
