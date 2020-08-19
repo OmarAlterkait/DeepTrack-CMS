@@ -1,1 +1,1 @@
-# This file contains other files of code.
+# This folder contains other files of code.
