@@ -24,6 +24,9 @@ process.load('DQMServices.Core.DQMStoreNonLegacy_cff')
 process.load('DQMOffline.Configuration.DQMOfflineMC_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
+process.load('myAnalyzer.myTrkNtp.myTrkNtp_cfi')
+process.myTrk_step = cms.Path(process.myTrkNtpAnalysisSequence)
+
 process.maxEvents = cms.untracked.PSet(
     input = cms.untracked.int32(10),
     output = cms.optional.untracked.allowed(cms.int32,cms.PSet)
@@ -92,6 +95,11 @@ process.DQMoutput = cms.OutputModule("DQMRootOutputModule",
 )
 
 # Additional output definition
+process.TFileService = cms.Service("TFileService",
+    fileName = cms.string('tracking_ntuple.root')
+)
+
+
 
 # Other statements
 process.mix.playback = True
@@ -141,12 +149,3 @@ from Configuration.StandardSequences.earlyDeleteSettings_cff import customiseEar
 process = customiseEarlyDelete(process)
 # End adding early deletion
 
-#Extra lines of code 
-process.load('myAnalyzers.myTrkNtp.myTrkNtp_cfi')
-process.myvtx_step = cms.Path(process.myTrkNtpAnalysisSequence)
-and then adding process.myvtx_step to the end of the main cms.Sequence command.
-You will also need to specify the file where you want to write your root ntuple file such as:
-# Additional output definition
-process.TFileService = cms.Service("TFileService",
-    fileName = cms.string('tracking_ntuple.root')
-)
